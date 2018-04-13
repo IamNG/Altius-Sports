@@ -1,0 +1,135 @@
+extends ../layouts/default
+
+block content
+    if Products.length
+        each Product in Products
+
+            head
+                title Altius | Products | Sports
+            div
+                img(src=Product.image.jumbotron_image, alt='Multi Sports', width='100%')
+            .container
+                .breadcram
+                    a(href='/') Home
+                    |  > Products  > Multi
+            .whopage(style='padding-bottom:10px;')
+                .section-header
+                    h2.dark-text=Product.title
+            .container.proPage
+                ul#li_block4
+                    li
+                        strong=Product.heading.one
+                    li
+                        strong 
+                            =Product.heading.two
+                    li
+                        strong=Product.heading.three
+                    li
+                        strong=Product.heading.four
+
+                br
+                br
+            .section-header
+                .regular.container
+                    div
+                        img(src=Product.image.one)
+                    div
+                        img(src=Product.image.two)
+                    div
+                        img(src=Product.image.three)
+                    div
+                        img(src=Product.image.four)
+                    div
+                        img(src=Product.image.five)
+                    div
+                        img(src=Product.image.six)
+                    div
+                        img(src=Product.image.seven)
+                    div
+                        img(src=Product.image.eight)
+                    div
+                        img(src=Product.image.nine)
+            
+            .container.proPage
+                p=Product.content.one
+                    //- | TigerTurf’s synthetic, all-weather, multi-use playing surfaces have become a standard facility in primary schools, intermediate schools and colleges throughout India, New Zealand, Australia, Europe, the Americas and rest of Asia. Clubs and real estate projects are also finding multi use sports surfaces providing better value for money as you can have multiple sports without the need for a larger area. GET MORE FOR LESS – ASK OUR CAD TEAM FOR A FREE ESTIMATION.
+                br
+                br
+            //- Block2
+            #d.section-margin
+                .container
+                    .col-md-6
+                        #d5
+                            h3.h4=Product.heading.five
+                            ul.ul
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.two
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.three
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.four
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.five
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.six
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.seven
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.eight
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.nine
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.ten
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.eleven
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.twelve
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.thirteen
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.fourteen
+                    .col-md-6
+                        #d5
+                            h3.h4=Product.heading.six
+                            p#p6=Product.content.fifteen
+                                //- | Our vinyl sports flooring range is suitable for all indoor sports and has high shock absorption properties and is an extremely durable playing surface. The advanced technology ensures that the sports floor is adequately cushioned, thus greatly lowering the impact on the joints of players.
+                                //- | We have a range of surfaces from 4.5mm to 8mm, and the same has been rigorously tested for ball bounce and coefficient of friction. With a variety of colours and topcoat finishing, we even bring out the aesthetic value with the sport.                    
+                            ul.ul
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.sixteen
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.seventeen
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.eighteen
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.nineteen
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.twenty
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.twentyone
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.twentytwo
+                br
+                br
+                br
+                br

@@ -1,0 +1,86 @@
+extends ../layouts/default
+
+block content
+	if Paynplays.length
+		each pay in Paynplays
+			head
+				title Altius | Pay and Play
+
+			div
+				img(src=pay.image.jumbotron_image, width="100%")
+			.container
+				.breadcram
+					a(href="/") Home
+					|  &gt; Pay and Play
+			.whopage
+				.container.products_list
+					.section-header
+						h1.dark-text=pay.title
+					div
+						p(style="font-size: 16px; text-align:left; margin-bottom:20px; color:#0872c8; text-transform: uppercase;")
+							strong=pay.heading.one
+					.container.proPage
+						p=pay.content.one
+						
+					.sano_li
+						br
+						br
+						p(style="text-align:center; margin-bottom:20px;")
+							img(src=pay.image.one, alt="altius-lifestyle-logo")
+							br.tiger-break
+							img.tiger-logo(src=pay.image.two, alt="altius-lifestyle-logo")
+						br
+						br
+						p(style="font-size: 16px; text-align:left; margin-bottom:20px; color:#0872c8; text-transform: uppercase;")
+							strong=pay.heading.two
+					
+					.imgBoxes
+						ul
+							li
+								img.myImages(src=pay.image.three)
+								br
+								br
+								.gridFline=pay.description.one
+									
+								.gridSline=pay.description.six
+									
+							li
+								img.myImages(src=pay.image.four)
+								br
+								br
+								.gridFline=pay.description.two
+									
+								.gridSline=pay.description.seven
+									
+							li
+								img.myImages(src=pay.image.five)
+								br
+								br
+								.gridFline=pay.description.three
+									
+								.gridSline=pay.description.eight
+									
+							li
+								img.myImages(src=pay.image.six)
+								br
+								br
+								.gridFline=pay.description.four
+									
+								.gridSline=pay.description.nine
+								
+							li
+								img.myImages(src=pay.image.seven)
+								br
+								br
+								.gridFline=pay.description.five
+									
+								.gridSline=pay.description.ten
+									
+				//- .container.proPage
+				//- 	.side
+				//- 		h5=static.heading.Eighth
+			br
+			br
+					
+
+	

@@ -1,0 +1,52 @@
+extends ../layouts/default
+
+block content
+    if Products.length
+        each Product in Products
+            head
+                title Altius | Products | Sports
+            div
+                img(src=Product.image.jumbotron_image, alt='Other Sports', width='100%')
+                //- Block1
+            .container
+                .breadcram
+                    a(href='/')  Home
+                    |  > Products  > Other Sports
+            .whopage(style='padding-bottom:10px;')
+                .section-header
+                    h2.dark-text=Product.title
+            .section-header
+                .regular.container
+                    div
+                        img(src=Product.image.one)
+                    div
+                        img(src=Product.image.two)
+                    div
+                        img(src=Product.image.three)
+                    div
+                        img(src=Product.image.four)
+                    div
+                        img(src=Product.image.five) 
+
+            .container.proPage
+                p=Product.content.one
+                    
+                    
+                    strong=Product.content.two
+                    | ; 
+                    br
+                    =Product.content.three
+                    strong=Product.content.four
+                    |  and 
+                    strong=Product.content.five
+                    br
+                    =Product.content.six
+                    strong=Product.content.seven
+                    br
+                    =Product.content.eight
+                    strong=Product.content.nine
+                    br
+                    =Product.content.ten
+                    strong=Product.content.eleven
+                br
+                br

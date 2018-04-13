@@ -1,0 +1,44 @@
+extends ../layouts/default
+
+block content
+	if Fiabs.length
+		each fiab in Fiabs
+			head
+				title Altius | Field in a Box
+			.TopImgF
+				img(src=fiab.image.jumbotron_image, alt="slider")
+			.container
+				.breadcram
+					a(href='/') Home
+					| &gt; Field in a Box
+			.whopage
+				.container.products_list
+					.section-header
+						h2.dark-text=fiab.title
+				.container.propage
+					p.sanoF
+						img(src=fiab.image.one,alt="slider", style="width:200px;")
+						=fiab.content.one
+						br
+						=fiab.content.two
+						br
+						=fiab.content.three
+						br
+						=fiab.content.four
+						br
+						=fiab.content.five
+						br
+						=fiab.content.six
+						br
+						=fiab.content.seven
+						br
+						=fiab.content.eight
+						br
+						br
+						br
+						strong.dsk-quote=fiab.content.nine
+						br
+						br
+						=fiab.content.ten 
+							a(href=fiab.content.eleven, target="_blank")  link 
+						=fiab.content.twelve

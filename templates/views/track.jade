@@ -1,0 +1,99 @@
+extends ../layouts/default
+
+block content
+    if Products.length
+        each Product in Products
+            head
+                title Altius | Products | Sports
+            div
+                img(src=Product.image.jumbotron_image, width='100%')
+            .container
+                .breadcram
+                    a(href='/') Home
+                    |  > Products  > Athletic Tracks
+            .whopage
+                .section-header
+                    h2(class="dark-text")=Product.title
+                .container.proPage
+                    p=Product.content.one
+                    
+                        //- | IAAF certified athletic track systems from world-leader Polytan, with complete turnkey project  management entailing design, construction, supply and installation of equipment, is brought to you by Altius Sports. In addition to renovating, resurfacing and replacing existing synthetic athletic surfaces, we also help you maintain your athletic track surface.
+                        <br>
+                        <br>
+                    p= Product.content.two
+                        //- | The Polytan track systems are the ideal foundation for best times, records and international elite sport. The special solid PU structure offers optimum acceleration ensuring maximum performance. The EPDM granules dispersed in the top layer make this sports surface the ideal choice for running shoes with spikes and offers high abrasion resistance. Energy-enhancing tread elasticity and excellent acceleration performance complete the properties of these elite surfaces.
+                        //- | The solid design also ensures a particularly long lifespan.
+            .section-header
+                .regular.container
+                    div
+                        img(src=Product.image.one)
+                    div
+                        img(src=Product.image.two)
+                    div
+                        img(src=Product.image.three)
+                    div
+                        img(src=Product.image.four)
+
+            //- block2
+            #d.section-margin
+                .container
+                    .col-md-6
+                        #d5
+                            h3.h4=Product.heading.one
+                            //- Product_contents.content.third
+                                //- WHY POLYTAN
+                            ul.ul
+                                //- if Product_contents.length
+                                //-     each Product in Product_contents
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.three
+                                    //- | Built for faster times
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.four
+                                    //- | Superior shock absorption properties
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.five
+                                    //- | Highly durable
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.six
+                                    //- | No advanced maintenance required
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.seven
+                                    //- | All weather surface
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.eight
+                                    //- | High return of energy
+                    .col-md-6
+                        #d5
+                            h3.h4=Product.heading.two
+                            //- QUALITY THAT REMAINS IN-HOUSE – INSTALLING TRACKS SINCE 1969
+                            ul.ul
+                                //- if Product_contents.length
+                                    each Product in Product_contents
+
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.nine
+                                    //- | Polytan Binder and Polyurethane
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.ten 
+                                    //- | Polytan EPDM (Melos)
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.eleven
+                                    //- | Polytan Installation Equipment
+                                li#p6
+                                    span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                    =Product.content.twelve
+                                    //- | Polytan Installation Crew
+                br
+                br
+                br
+                br

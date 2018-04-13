@@ -1,0 +1,30 @@
+extends ../layouts/default
+
+block content
+    if Abouts.length
+        each about in Abouts
+            head
+                title Altius | About Us 
+            
+            .slider
+                img(src=about.image.jumbotron_image, alt='slider')
+            .container
+                .breadcram
+                    a(href='/') Home
+                    |  > About Altius
+            .whopage   
+                .section-header
+                    h2.dark-text=about.title
+                
+                .container.proPage
+                    p=about.content.one
+                           
+                    p=about.content.two
+                            
+                    p=about.content.three
+                            
+                    br
+                    .side
+                            h5=about.content.four 
+                           
+

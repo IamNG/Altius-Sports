@@ -1,0 +1,134 @@
+extends ../layouts/default
+
+block content
+	if Products.length
+		each Product in Products
+			head
+				title  Altius | Products | Other Products
+
+			div
+				img(src=Product.image.jumbotron_image,alt="Shock Pad",width="100%")
+			.container
+				.breadcram
+					<a href="/">Home</a>
+					|	 &gt; Products  &gt; Shock Pad
+			
+			.whopage
+				.section-header
+					h2.dark-text=Product.title
+				//- .container.proPage
+					p.dark-text Salient features
+					ul#li_block4 
+						li<strong>Simple and quick to install</strong>
+						li<strong>Easy to clean with no maintenance requirement</strong>
+						li<strong>Interwoven foam pad with an enduring and long life span</strong>
+
+					
+			.section-header
+				.regular.container
+					div
+						img(src=Product.image.one)
+					div
+						img(src=Product.image.two)
+					div
+						img(src=Product.image.three)
+					div
+						img(src=Product.image.four)
+					div
+						img(src=Product.image.five)
+					
+						
+			.container.proPage
+				p.h6(style="font-size:16px")
+					strong=Product.heading.one
+				
+				p(style="margin-top:30px")=Product.content.one
+				
+				p.h6(style="margin-top:30px")
+					strong=Product.heading.two
+
+				br
+
+				ul#li_block4
+					li Multicolor
+					li Compressive strength
+					li No permanent deformation
+					li Tensile strength 141N
+
+
+				p.h6(style="margin-top:30px")
+					strong=Product.heading.three
+
+				br
+
+				ul#li_block4
+					li Playgrounds
+					li Green Areas
+					li Landscaping
+					
+				table(border="1",style="width:75%")
+					th(style="text-align:center") Product Matrix
+					th(style="text-align:center") critical Fall Height
+					tr
+						td(style="padding-left:10px") 35mm Landscape grass + 1 X TigerPad 45mm
+						td(style="padding-left:10px")&bull;2m
+					tr
+						td(style="padding-left:10px") 35mm Landscape grass + 2 X TigerPad 45mm
+						td(style="padding-left:10px")&bull;3m
+				hr
+
+				p.h6(style="font-size:16px")
+					strong=Product.heading.four
+
+				p(style="margin-top:30px")=Product.content.two
+				
+				p.h6(style="margin-top:30px")
+					strong=Product.heading.five
+
+				br
+
+				ul#li_block4
+					li Sports application under turf for all contact sports
+					li Leisure application for children’s play areas
+					li Landscape and golf
+				hr
+
+				p.h6(style="font-size:16px")
+					strong=Product.heading.six
+				br
+
+				p Features and Benefits
+
+				table(border="1",style="width:75%")
+					th(style="text-align:center") Features
+					th(style="text-align:center") Benefits
+					tr
+						td(style="padding-left:10px") Softness
+						td(style="padding-left:10px")&bull;Soft touch <br> &bull;Spreads load peaks
+					tr
+						td(style="padding-left:10px") High chemical resistance
+						td(style="padding-left:10px")&bull;No deterioration when in contact with chemical substances
+					tr
+						td(style="padding-left:10px") Humidity resistance
+						td(style="padding-left:10px")&bull;Long life in humid conditions, does not decay or rot <br> &bull;Water-repellent
+					tr
+						td(style="padding-left:10px") Easy to compress
+						td(style="padding-left:10px")&bull;Excellent sealing against dust, draught, noise and cold <br>
+													&bull;Conforms well to irregular gaps <br>
+													&bull;Seals without deformation of adjacent structure
+					tr
+						td(style="padding-left:10px") Environmentally neutral
+						td(style="padding-left:10px")&bull;No heavy metals<br>
+													&bull;No dangerous additives (plasticizers)<br>
+													&bull;Free of CFC’s and HCFC’s
+				p.h6(style="margin-top:30px")<strong> Advantages:</strong>
+
+				br
+
+				ul#li_block4
+					li Adhesive-friendly foam
+					li Very narrow thickness tolerances
+					li Excellent conformability
+					li High skin peel strength
+			br
+			br

@@ -1,0 +1,60 @@
+//-case study of the month
+extends ../layouts/default
+
+block content
+	.slider
+		if Case_Studies.length
+			each case_study in Case_Studies
+				head 
+					title Altius | Case Study of the Month
+
+				img(src=case_study.image.jumbotron_image, alt='slider')
+	.container
+		.breadcram
+			a(href='/') Home
+			| > Case Study Of The Month
+		.whopage
+
+			.section-header
+				if Case_Studies.length
+					each case_study in Case_Studies
+						h2(class="dark-text")= case_study.title
+			.container.proPage
+				.container
+					if Case_Studies.length
+						each case_study in Case_Studies
+							h5=case_study.venue
+							P=case_study.describe
+								
+							br
+				.row
+					.container.products_list
+						if Case_Studies.length
+							each case_study in Case_Studies
+								ul
+									li
+										a(href='#')
+											img(src=case_study.image.one)
+									li
+										a(href='#')
+											img(src=case_study.image.two)
+									li
+										a(href='#')
+											img(src=case_study.image.three)
+					if Case_Studies.length
+						each case_study in Case_Studies
+							p
+								strong Date of project completion :
+								=case_study.date
+							p
+								strong Surface :
+								=case_study.surface
+							P
+								strong Base :
+								=case_study.base
+							br
+							
+							p=case_study.content.one
+							p=case_study.content.two
+							p=case_study.content.three
+							p=case_study.content.four

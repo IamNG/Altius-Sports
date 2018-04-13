@@ -1,0 +1,63 @@
+//-Services
+extends ../layouts/default
+
+block content
+	if Services.length
+		each service in Services
+			head 
+				title Altius | Our Services                        
+			.slider
+				img(src=service.image.jumbotron_image, alt='slider')
+			.container
+				.breadcram
+					a(href='/') Home
+					|  > Our Services
+					.whopage
+						.section-header
+							h2.dark-text=service.title
+						.container.my-cont.our_servic
+							.row
+								.col-sm-6
+									figure
+										img(src=service.image.one)
+									figcaption
+										h2=service.heading.one
+										p=service.content.one										
+								.col-sm-6
+									figure
+										img(src=service.image.two)
+									figcaption
+										h2=service.heading.two
+										p=service.content.two
+										
+								.col-sm-6
+									figure
+										img(src=service.image.three)
+									figcaption
+										h2=service.heading.three
+										p=service.content.three
+										
+								.col-sm-6
+									figure
+										img(src=service.image.four)
+									figcaption
+										h2=service.heading.four
+										p=service.content.four
+										
+								.col-sm-6
+									figure
+										img(src=service.image.five)
+									figcaption
+										h2=service.heading.five
+										p=service.content.five
+										
+								.col-sm-6
+									figure
+										img(src=service.image.six)
+									figcaption
+										h2=service.heading.six
+										p=service.content.six
+										
+br
+br
+									

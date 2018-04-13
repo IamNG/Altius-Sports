@@ -1,0 +1,113 @@
+extends ../layouts/default
+
+block content
+    if Products.length
+        each Product in Products
+            body
+                head
+                    title Altius | Products | Sports
+                .slider
+                    img(src=Product.image.jumbotron_image, alt='slider')
+                .container
+                    .breadcram
+                    a(href='/') Home
+                    |  > Products > Badminton
+                .whopage
+                .section-header
+                    h2.dark-text=Product.title
+                .container.proPage
+                    p=Product.content.one
+                .section-header
+                    .regular.container
+                        
+                           
+                        div
+                            img(src=Product.image.one)
+                        div
+                            img(src=Product.image.two)
+                        div
+                            img(src=Product.image.three)
+                        div
+                            img(src=Product.image.four)
+                        div
+                            img(src=Product.image.five)
+                        
+                    //- Block2
+                #d.section-margin
+                    .container
+                        .col-md-6
+                            #d5
+                                h3.h4=Product.heading.one
+                                ul.ul
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.two
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.three
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.four
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.five
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.six
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.seven
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.eight
+                        .col-md-6
+                            #d5
+                                h3.h4=Product.heading.two
+                                ul.ul
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.nine
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.ten
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.eleven
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.twelve
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.thirteen
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.fourteen
+                                    li#p6
+                                        span#p1.fa.fa-check.fa-spacing(aria-hidden='true')
+                                        =Product.content.fifteen
+                    br
+                    br
+                    br
+                    br
+                
+                script(src="/js/jquery/script2.js")
+    //- .container: .jumbotron
+            img(src='/images/logo.svg', width='160')
+            h1 Welcome
+            p This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.
+            p It includes the latest versions of
+                | <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
+                | and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
+            p Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.
+            hr
+            if user && user.canAccessKeystone
+                p
+                    a(href='/keystone').btn.btn-lg.btn-primary Open the Admin UI
+            else
+                p We have created a default Admin user for you with the email <strong>user@keystonejs.com</strong> and the password <strong>admin</strong>.
+                p
+                    a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
+                    |  to use the Admin UI.
+            hr
+            p Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
+                | <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.

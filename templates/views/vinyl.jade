@@ -1,0 +1,46 @@
+extends ../layouts/default
+
+block content
+	if Products.length
+		each Product in Products
+			head
+				title  Altius | Products | Other Products
+			div
+				img(src=Product.image.jumbotron_image,alt="Vinyl Flooring",width="100%")
+			.container
+				.breadcram
+					<a href="/">Home</a>
+					|	&gt; Products  &gt; Vinyl Flooring
+			
+			.whopage
+				.section-header
+					h2.dark-text=Product.title
+				.container.proPage
+					p.dark-text Salient features
+					ul#li_block4 
+						li<strong>Simple and quick to install</strong>
+						li<strong>Easy to clean with no maintenance requirement</strong>
+						li<strong>Interwoven foam pad with an enduring and long life span</strong>
+
+					
+			.section-header
+				.regular.container
+					div
+						img(src=Product.image.one)
+					div
+						img(src=Product.image.two)
+					div
+						img(src=Product.image.three)
+					div
+						img(src=Product.image.four)
+					div
+						img(src=Product.image.five)
+					
+						
+			.container.proPage
+				p=Product.content.one
+					br
+				p=Product.content.two  
+				br
+				br
+	

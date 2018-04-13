@@ -1,0 +1,87 @@
+extends ../layouts/default
+
+block content
+	if Products.length
+		each Product in Products
+			head
+				title Altius | Products | Leisure
+			div
+				img(src=Product.image.jumbotron_image,alt="hockey",width="100%")
+			.container
+				.breadcram
+					<a href="/">Home</a>
+					|	&gt; Products &gt; Landscape
+			
+			.whopage
+				.section-header
+					h2.dark-text=Product.title
+				.container.proPage
+
+					
+			.section-header
+				.regular.container
+					div
+						img(src=Product.image.one)
+					div
+						img(src=Product.image.two)
+					div
+						img(src=Product.image.three)
+					div
+						img(src=Product.image.four)
+					div
+						img(src=Product.image.five)
+					div
+						img(src=Product.image.six)
+					div
+						img(src=Product.image.seven)
+					div
+						img(src=Product.image.eight)
+					div
+						img(src=Product.image.nine)
+			.container.proPage
+				p=Product.content.one
+				br
+				br
+			#d.section-margin
+				.container
+					.col-md-12
+						#d5
+							h3.h4=Product.heading.one
+
+							ul.ul
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.two
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.three
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.four
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.five
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.six
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.seven
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.eight
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.nine
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.ten
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.eleven
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.twelve
+								li#p6
+									span#p1.fa.fa-check.fa-spacing(aria-hidden="true")
+									=Product.content.thirteen
